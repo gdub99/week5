@@ -1,7 +1,10 @@
 MoviesApp::Application.routes.draw do
 
+  get '/', controller: 'movies', action: 'index'
   # Routes for the Theater resource:
   # CREATE
+
+  post '/theaters', controller: 'theaters', action: 'create'
   get '/theaters/new', controller: 'theaters', action: 'new'
 
   # READ
